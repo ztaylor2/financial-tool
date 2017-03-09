@@ -1,0 +1,35 @@
+<h2 class="title">Rate of Return</h2>
+
+	<div class="inputs">
+
+		<p class="inputTitle">
+			Input Values Here:
+		</p>
+
+			<ul>
+
+				<li> Initial Investment ($):
+					<input type = "number" ng-model="investment" ng-change="updateReturn()"></input>
+				</li>
+
+				<li> Return ($):
+					<input type = "number" ng-model="return" ng-change="updateReturn()"></input>
+				</li>
+				
+			</ul>	
+
+	</div>
+
+</br>
+
+	<div class="output">
+
+		<p class="outputTitle">
+			Rate of Return: 
+		</p>
+
+		<p class="cash">
+			{{ror * 100| number :1 }}%
+		</p>
+		
+	</div>

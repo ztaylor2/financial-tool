@@ -1,0 +1,39 @@
+<h2 class="title">Leverage Ratio</h2>
+
+	<div class="inputs">
+
+		<p class="inputTitle">
+			Input Values Here:
+		</p>
+
+			<ul>
+
+				<li> Total Liabilities ($):
+					<input type = "number" ng-model="liab" ng-change="updateLeverage()"></input>
+				</li>
+
+				<li> Total Debt ($):
+					<input type = "number" ng-model="debt" ng-change="updateLeverage()"></input>
+				</li>
+
+				<li> Total Income ($):
+					<input type = "number" ng-model="income" ng-change="updateLeverage()"></input>
+				</li>
+				
+			</ul>	
+
+	</div>
+
+</br>
+
+	<div class="output">
+
+		<p class="outputTitle">
+			Leverage Ratio: 
+		</p>
+
+		<p class="cash">
+			{{leverage}}
+		</p>
+
+	</div>

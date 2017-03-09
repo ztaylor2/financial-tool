@@ -1,0 +1,39 @@
+<h2 class="title">Mortgage Calculator</h2>
+
+	<div class="inputs">
+
+		<p class="inputTitle">
+			Input Values Here:
+		</p>
+
+			<ul>
+
+				<li> Mortgage Amount ($):
+					<input type = "number" ng-model="principle" ng-change="updateMortgage()"></input>
+				</li>
+
+				<li> Interest Rate (%):
+					<input type = "number" ng-model="rate" ng-change="updateMortgage()"></input>
+				</li>
+
+				<li> Mortgage Period (Years):
+					<input type = "number" ng-model="time" ng-change="updateMortgage()"></input>
+				</li>
+
+			</ul>	
+
+	</div>
+
+</br>
+
+	<div class="output">
+
+		<p class="outputTitle">
+			Monthly Mortgage Payment: 
+		</p>
+
+		<p class="cash">
+			{{monthlyPayment  | currency : symbol : fractionSize}}
+		</p>
+
+	</div>

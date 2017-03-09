@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+
+    <title>Finance Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+  </head>
+
+  <body ng-app='app'>
+
+    <ul class="sidenav">
+
+      <li>
+        <a href='#/mortgage'>Mortgage Calculator</a>
+      </li>
+
+      <li>
+        <a href='#/interest'>Compounding Interest</a>
+      </li>
+
+      <li>
+        <a href='#/return'>Rate of Return</a>
+      </li>
+
+      <li>
+        <a href='#/leverage'>Leverage Ratio</a>
+      </li>
+      
+    </ul>
+
+    <div ng-view></div>
+
+    <div class="bottomBar"> 
+      <p>Financial Calculator Created with AngularJS</p>
+    </div>
+
+    <script src='scripts/angular.min.js'></script>
+    <script src='scripts/angular-route.min.js'></script>
+    <script src='scripts/main.js'></script>
+
+  </body>
+</html>

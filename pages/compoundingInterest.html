@@ -1,0 +1,43 @@
+<h2 class="title">Compounding Calculator</h2>
+
+	<div class="inputs">
+
+		<p class="inputTitle">
+			Input Values Here:
+		</p>
+
+			<ul>
+
+				<li> Initial Investment ($):
+					<input type = "number" ng-model="principle" ng-change="updateInterest()"></input>
+				</li>
+
+				<li> Interest Rate (%):
+					<input type = "number" ng-model="rate" ng-change="updateInterest()"></input>
+				</li>
+
+				<li> length of Investment (Years):
+					<input type = "number" ng-model="time" ng-change="updateInterest()"></input>
+				</li>
+
+				<li>Times Compounded per Year: 
+					<input type = "number" ng-model="comp" ng-change="updateInterest()"></input>
+				</li>
+
+			</ul>	
+
+	</div>
+
+</br>
+
+	<div class="output">
+
+		<p class="outputTitle">
+			Final Value of Investment: 
+		</p>
+
+		<p class="cash">
+			{{finalSum  | currency : symbol : fractionSize}}
+		</p>
+
+	</div>
